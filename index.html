@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="nav">
+        <div class="left">
+            <p>No SIM</p>
+            <i class="fas fa-wifi"></i>
+        </div>
+
+        <div id="time">
+            <span id="datetime"></span>
+        </div>
+
+        <div class="right">
+            <img src="img/battery_113571.png" alt="">
+        </div>
+    </div>
+    <div id="container">
+
+        <h3 id="one">Tap Me!</h3>
+        <h3 id="two">Tap Me!</h3>
+        <h3 id="three">Tap Me!</h3>
+
+    </div>
+
+
+
+
+    <script>
+        var time = new Date();
+    
+        document.getElementById("datetime").innerHTML = `${        time.toLocaleString('en-US', { hour: 'numeric', hour12: true, minute: 'numeric' })
+}`;
+        
+     
+    </script>
+</body>
+</html>
